@@ -13,7 +13,7 @@
             font-family: "Times New Roman", Times, serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #ffffff;
             overflow-x: hidden;
         }
         
@@ -49,6 +49,7 @@
     border: none; /* Add or remove a border */
     overflow: stretch;
     margin-left: 10px;
+    margin-bottom: 40px;
 }
 
         
@@ -78,7 +79,7 @@
             padding: 0 10px;
             display: none;
             overflow: hidden;
-            background-color: #f2f2f2;
+            background-color: #ffffff;
             text-align: left; /* Ensure text and images align to the left */
             align-items: left;
 
@@ -174,6 +175,37 @@ audio {
 }
 
 
+/* Ensure the body and html take the full height of the screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should take up available space */
+.main-content {
+    flex: 1; /* This will make the main content area expand to fill available space */
+}
+
+/* Footer styling */
+.site-footer {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Center the footer content */
+.footer-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 10px;
+    width: 100%;
+}
+
 
         
 
@@ -197,246 +229,247 @@ audio {
     </div>
     
 
-
-  
-
-
+   
+<details>
+    <summary style="list-style: none; cursor: pointer; display: flex; align-items: center;">
     <div style="text-align: left; margin-left: 10px;">
-        <h1>/works</h1>
-        <p>updated: 2024-08-29</p>
+        <h1 style="margin: 0;">/works</h1>
     </div>
+</summary>
+
+
+<a href="#ripstop" class="accordion">2023-08-11_Ripstop Jacket</a>
+<div id="ripstop" class="panel">
+<p class="description">
+    The jacket is made from a cotton ripstop material, features a two-way zipper, and flat felled seams.
+    I made this project because I love flat felled seams.
+</p>
+<div class="image-links">
+    <label for="ripstop-img1" class="image-link">IMG_1387.jpg</label>
+    <label for="ripstop-img2" class="image-link">IMG_1377.jpg</label>
+    <label for="ripstop-img3" class="image-link">IMG_1382.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="ripstop-images" id="ripstop-img1" hidden />
+    <img src="IMG_1387.jpg" alt="Ripstop Jacket Front" class="project-image">
+    <input type="radio" name="ripstop-images" id="ripstop-img2" hidden />
+    <img src="IMG_1377.jpg" alt="Ripstop Jacket Detail" class="project-image">
+    <input type="radio" name="ripstop-images" id="ripstop-img3" hidden />
+    <img src="IMG_1389.jpg" alt="Ripstop Jacket Side View" class="project-image">
+</div>
+</div>
+
+
+<a href="#helmet" class="accordion">2023-06-07_Cycling Helmet</a>
+<div id="helmet" class="panel">
+<p class="description">For my capstone project, I was interested in exploring the area of cyclist safety. I began searching for solutions for higher visibility, but I ultimately found more area for innovation in the form of active feedback systems. Through my research, I found that automobiles present the largest risk to cyclists, and electric vehicles are more likely to be involved in a cycling crash. My final design works to incorportate modern automobile safety features such as blind spot detection, haptic feedback, and brake lights. This system could give cyclists enhanced awareness of their surroundings and increase reaction time. </p>
+<div class="image-links">
+    <label for="helmet-img1" class="image-link">helmet_side.png</label>
+    <label for="helmet-img2" class="image-link">helmet_back.jpg</label>
+    <label for="helmet-img3" class="image-link">helmet_kai.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="helmet-images" id="helmet-img1" hidden />
+    <img src="helmet_side.png" alt="Cycling Helmet Side View" class="project-image">
+    <input type="radio" name="helmet-images" id="helmet-img2" hidden />
+    <img src="helmet_back.jpg" alt="Cycling Helmet Back View" class="project-image">
+    <input type="radio" name="helmet-images" id="helmet-img3" hidden />
+    <img src="helmet_kai.jpg" alt="Cycling Helmet in Use" class="project-image">
+</div>
+</div>
+
+<a href="#stove" class="accordion">2023-03-14_Camp Stove</a>
+<div id="stove" class="panel">
+<p class="description">A compact and sturdy stove for car camping. Many of the current stove and windscreen designs are not optimized for more heavy duty cookware. By blocking the wind near the heat source, the workspace becomes more open and allows for the use of larger cookware.</p>
+<div class="image-links">
+    <label for="stove-img1" class="image-link">stove1.png</label>
+    <label for="stove-img2" class="image-link">stove2.png</label>
+    <label for="stove-img3" class="image-link">IMG_1603.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="stove-images" id="stove-img1" hidden />
+    <img src="stove1.png" alt="Butane Camp Stove Front View" class="project-image">
+    <input type="radio" name="stove-images" id="stove-img2" hidden />
+    <img src="stove2.png" alt="Butane Camp Stove Side View" class="project-image">
+    <input type="radio" name="stove-images" id="stove-img3" hidden />
+    <img src="IMG_1603.jpg" alt="Butane Camp Stove in Use" class="project-image">
+</div>
+</div>
 
 
 
 
-    <a href="#ripstop" class="accordion">2023-08-11_Ripstop Jacket</a>
-    <div id="ripstop" class="panel">
-        <p class="description">
-            The jacket is made from a cotton ripstop material, features a two-way zipper, and flat felled seams.
-            I made this project because I love flat felled seams.
-        </p>
-        <div class="image-links">
-            <label for="ripstop-img1" class="image-link">IMG_1387.jpg</label>
-            <label for="ripstop-img2" class="image-link">IMG_1377.jpg</label>
-            <label for="ripstop-img3" class="image-link">IMG_1382.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="ripstop-images" id="ripstop-img1" hidden />
-            <img src="IMG_1387.jpg" alt="Ripstop Jacket Front" class="project-image">
-            <input type="radio" name="ripstop-images" id="ripstop-img2" hidden />
-            <img src="IMG_1377.jpg" alt="Ripstop Jacket Detail" class="project-image">
-            <input type="radio" name="ripstop-images" id="ripstop-img3" hidden />
-            <img src="IMG_1389.jpg" alt="Ripstop Jacket Side View" class="project-image">
-        </div>
-    </div>
-    
-    
-    <a href="#helmet" class="accordion">2023-06-07_Cycling Helmet</a>
-    <div id="helmet" class="panel">
-        <p class="description">For my capstone project, I was interested in exploring the area of cyclist safety. I began searching for solutions for higher visibility, but I ultimately found more area for innovation in the form of active feedback systems. Through my research, I found that automobiles present the largest risk to cyclists, and electric vehicles are more likely to be involved in a cycling crash. My final design works to incorportate modern automobile safety features such as blind spot detection, haptic feedback, and brake lights. This system could give cyclists enhanced awareness of their surroundings and increase reaction time. </p>
-        <div class="image-links">
-            <label for="helmet-img1" class="image-link">helmet_side.png</label>
-            <label for="helmet-img2" class="image-link">helmet_back.jpg</label>
-            <label for="helmet-img3" class="image-link">helmet_kai.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="helmet-images" id="helmet-img1" hidden />
-            <img src="helmet_side.png" alt="Cycling Helmet Side View" class="project-image">
-            <input type="radio" name="helmet-images" id="helmet-img2" hidden />
-            <img src="helmet_back.jpg" alt="Cycling Helmet Back View" class="project-image">
-            <input type="radio" name="helmet-images" id="helmet-img3" hidden />
-            <img src="helmet_kai.jpg" alt="Cycling Helmet in Use" class="project-image">
-        </div>
-    </div>
-    
-    <a href="#stove" class="accordion">2023-03-14_Camp Stove</a>
-    <div id="stove" class="panel">
-        <p class="description">A compact and sturdy stove for car camping. Many of the current stove and windscreen designs are not optimized for more heavy duty cookware. By blocking the wind near the heat source, the workspace becomes more open and allows for the use of larger cookware.</p>
-        <div class="image-links">
-            <label for="stove-img1" class="image-link">stove1.png</label>
-            <label for="stove-img2" class="image-link">stove2.png</label>
-            <label for="stove-img3" class="image-link">IMG_1603.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="stove-images" id="stove-img1" hidden />
-            <img src="stove1.png" alt="Butane Camp Stove Front View" class="project-image">
-            <input type="radio" name="stove-images" id="stove-img2" hidden />
-            <img src="stove2.png" alt="Butane Camp Stove Side View" class="project-image">
-            <input type="radio" name="stove-images" id="stove-img3" hidden />
-            <img src="IMG_1603.jpg" alt="Butane Camp Stove in Use" class="project-image">
-        </div>
-    </div>
-    
+
+
+
+<a href="#paracord" class="accordion">2023-01-14_Nylon Paracord Bag</a>
+<div id="paracord" class="panel">
+<p class="description">The cut and sew method of manufacturing can be wasteful due to the large amounts of offcuts. This project explores additive manufacturing. By using larger cord, the bag can be taken apart and the cord can be repurposed. 
+    </p>
+<div class="image-links">
+    <label for="paracord-img1" class="image-link">npb3.png</label>
+    <label for="paracord-img2" class="image-link">npb2.jpg</label>
+    <label for="paracord-img3" class="image-link">npb1.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="paracord-images" id="paracord-img1" hidden />
+    <img src="npb3.png" alt="Nylon Paracord Bag Front View" class="project-image">
+    <input type="radio" name="paracord-images" id="paracord-img2" hidden />
+    <img src="npb2.jpg" alt="Nylon Paracord Bag Side View" class="project-image">
+    <input type="radio" name="paracord-images" id="paracord-img3" hidden />
+    <img src="npb1.jpg" alt="Nylon Paracord Bag Detail" class="project-image">
+</div>
+</div>
+
+
+
+
+
+<a href="#wph" class="accordion">2022-11-01_Wooden Pencil Holder</a>
+<div id="wph" class="panel">
+<p class="description">The wooden pencil holder was inspired by shop tool storage solutions. 
+    </p>
+<div class="image-links">
+    <label for="wph-img1" class="image-link">wph3.jpg</label>
+    <label for="wph-img2" class="image-link">wph1.jpg</label>
+    <label for="wph-img3" class="image-link">wph4.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="wph-images" id="wph-img1" hidden />
+    <img src="wph3.jpg" alt="wph1" class="project-image">
+    <input type="radio" name="wph-images" id="wph-img2" hidden />
+    <img src="wph1.jpg" alt="wph2" class="project-image">
+    <input type="radio" name="wph-images" id="wph-img3" hidden />
+    <img src="wph4.jpg" alt="wph3" class="project-image">
+</div>
+</div>
+
+
+
+
+<a href="#pen" class="accordion">2022-11-08_Aluminum Pen</a>
+<div id="pen" class="panel">
+<p class="description">Using the metal lathe, I made a simple pen casing for a sharpie. I learned knurling and auto feeding for this project. 
+    </p>
+<div class="image-links">
+    <label for="pen-img1" class="image-link">pen2.jpg</label>
+    <label for="pen-img2" class="image-link">pen1.jpg</label>
+    <label for="pen-img3" class="image-link">pen3.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="pen-images" id="pen-img1" hidden />
+    <img src="pen2.jpg" alt="pen2" class="project-image">
+    <input type="radio" name="pen-images" id="pen-img2" hidden />
+    <img src="pen1.jpg" alt="pen1" class="project-image">
+    <input type="radio" name="pen-images" id="pen-img3" hidden />
+    <img src="pen3.jpg" alt="pen3" class="project-image">
+</div>
+</div>
 
 
 
 
 
 
-    <a href="#paracord" class="accordion">2023-01-14_Nylon Paracord Bag</a>
-    <div id="paracord" class="panel">
-        <p class="description">The cut and sew method of manufacturing can be wasteful due to the large amounts of offcuts. This project explores additive manufacturing. By using larger cord, the bag can be taken apart and the cord can be repurposed. 
-            </p>
-        <div class="image-links">
-            <label for="paracord-img1" class="image-link">npb3.png</label>
-            <label for="paracord-img2" class="image-link">npb2.jpg</label>
-            <label for="paracord-img3" class="image-link">npb1.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="paracord-images" id="paracord-img1" hidden />
-            <img src="npb3.png" alt="Nylon Paracord Bag Front View" class="project-image">
-            <input type="radio" name="paracord-images" id="paracord-img2" hidden />
-            <img src="npb2.jpg" alt="Nylon Paracord Bag Side View" class="project-image">
-            <input type="radio" name="paracord-images" id="paracord-img3" hidden />
-            <img src="npb1.jpg" alt="Nylon Paracord Bag Detail" class="project-image">
-        </div>
-    </div>
-    
+<a href="#campusPack" class="accordion">2022-06-11_Campus Pack</a>
+<div id="campusPack" class="panel">
+<p class="description">This pack is inspired by the modern college students toolkit as tablets and small form laptops replace textbooks... 
+    </p>
+<div class="image-links">
+    <label for="campusPack-img1" class="image-link">pack1.jpg</label>
+    <label for="campusPack-img2" class="image-link">pack4.jpg</label>
+    <label for="campusPack-img3" class="image-link">pack3.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="campusPack-images" id="campusPack-img1" hidden />
+    <img src="pack1.jpg" alt="pack1" class="project-image">
+    <input type="radio" name="campusPack-images" id="campusPack-img2" hidden />
+    <img src="pack4.jpg" alt="pack4" class="project-image">
+    <input type="radio" name="campusPack-images" id="campusPack-img3" hidden />
+    <img src="pack3.jpg" alt="pack3" class="project-image">
+</div>
+</div>
 
 
 
 
-    <a href="#wph" class="accordion">2022-11-01_Wooden Pencil Holder</a>
-    <div id="wph" class="panel">
-        <p class="description">The wooden pencil holder was inspired by shop tool storage solutions. 
-            </p>
-        <div class="image-links">
-            <label for="wph-img1" class="image-link">wph3.jpg</label>
-            <label for="wph-img2" class="image-link">wph1.jpg</label>
-            <label for="wph-img3" class="image-link">wph4.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="wph-images" id="wph-img1" hidden />
-            <img src="wph3.jpg" alt="wph1" class="project-image">
-            <input type="radio" name="wph-images" id="wph-img2" hidden />
-            <img src="wph1.jpg" alt="wph2" class="project-image">
-            <input type="radio" name="wph-images" id="wph-img3" hidden />
-            <img src="wph4.jpg" alt="wph3" class="project-image">
-        </div>
-    </div>
 
 
 
-    
-    <a href="#pen" class="accordion">2022-11-08_Aluminum Pen</a>
-    <div id="pen" class="panel">
-        <p class="description">Using the metal lathe, I made a simple pen casing for a sharpie. I learned knurling and auto feeding for this project. 
-            </p>
-        <div class="image-links">
-            <label for="pen-img1" class="image-link">pen2.jpg</label>
-            <label for="pen-img2" class="image-link">pen1.jpg</label>
-            <label for="pen-img3" class="image-link">pen3.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="pen-images" id="pen-img1" hidden />
-            <img src="pen2.jpg" alt="pen2" class="project-image">
-            <input type="radio" name="pen-images" id="pen-img2" hidden />
-            <img src="pen1.jpg" alt="pen1" class="project-image">
-            <input type="radio" name="pen-images" id="pen-img3" hidden />
-            <img src="pen3.jpg" alt="pen3" class="project-image">
-        </div>
-    </div>
-
-
-
-
-    
-    
-    <a href="#campusPack" class="accordion">2022-06-11_Campus Pack</a>
-    <div id="campusPack" class="panel">
-        <p class="description">This pack is inspired by the modern college students toolkit as tablets and small form laptops replace textbooks... 
-            </p>
-        <div class="image-links">
-            <label for="campusPack-img1" class="image-link">pack1.jpg</label>
-            <label for="campusPack-img2" class="image-link">pack4.jpg</label>
-            <label for="campusPack-img3" class="image-link">pack3.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="campusPack-images" id="campusPack-img1" hidden />
-            <img src="pack1.jpg" alt="pack1" class="project-image">
-            <input type="radio" name="campusPack-images" id="campusPack-img2" hidden />
-            <img src="pack4.jpg" alt="pack4" class="project-image">
-            <input type="radio" name="campusPack-images" id="campusPack-img3" hidden />
-            <img src="pack3.jpg" alt="pack3" class="project-image">
-        </div>
-    </div>
-
-
-
+<a href="#foragingPack" class="accordion">2022-03-12_Foraging Pack</a>
+<div id="foragingPack" class="panel">
+<p class="description">Foraging requires extra storage considerations for convenience and ergonomics while picking, as well as storing goods for optimized freshness...
+    </p>
+<div class="image-links">
+    <label for="foragingPack-img1" class="image-link">pack1.jpg</label>
+    <label for="foragingPack-img2" class="image-link">pack4.jpg</label>
+    <label for="foragingPack-img3" class="image-link">pack3.jpg</label>
+</div>
+<div class="image-container">
+    <input type="radio" name="foragingPack-images" id="foragingPack-img1" hidden />
+    <img src="pack1.jpg" alt="pack1" class="project-image">
+    <input type="radio" name="foragingPack-images" id="foragingPack-img2" hidden />
+    <img src="pack4.jpg" alt="pack4" class="project-image">
+    <input type="radio" name="foragingPack-images" id="foragingPack-img3" hidden />
+    <img src="pack3.jpg" alt="pack3" class="project-image">
+</div>
+</div>
+</details>
 
 
 
         
-    <a href="#foragingPack" class="accordion">2022-03-12_Foraging Pack</a>
-    <div id="foragingPack" class="panel">
-        <p class="description">Foraging requires extra storage considerations for convenience and ergonomics while picking, as well as storing goods for optimized freshness...
-            </p>
-        <div class="image-links">
-            <label for="foragingPack-img1" class="image-link">pack1.jpg</label>
-            <label for="foragingPack-img2" class="image-link">pack4.jpg</label>
-            <label for="foragingPack-img3" class="image-link">pack3.jpg</label>
-        </div>
-        <div class="image-container">
-            <input type="radio" name="foragingPack-images" id="foragingPack-img1" hidden />
-            <img src="pack1.jpg" alt="pack1" class="project-image">
-            <input type="radio" name="foragingPack-images" id="foragingPack-img2" hidden />
-            <img src="pack4.jpg" alt="pack4" class="project-image">
-            <input type="radio" name="foragingPack-images" id="foragingPack-img3" hidden />
-            <img src="pack3.jpg" alt="pack3" class="project-image">
-        </div>
-    </div>
-
-
-
-
+<details>
+    <summary style="list-style: none; cursor: pointer; display: flex; align-items: center;">
     <div style="text-align: left; margin-left: 10px;">
-        <h1>/more</h1>
-        <p>updated: 2025-01-19</p>
+        <h1 style="margin: 0;">/more</h1>
     </div>
+</summary>
 
 
-    <a href="#sounds" class="accordion">>SOUNDS<</a>
-    <div id="sounds" class="panel">
-        <p class="description">synthesis
-            </p>
+<a href="#sounds" class="accordion">>SOUNDS<</a>
+<div id="sounds" class="panel">
+<p class="description">synthesis
+    </p>
 
 
-            
-        <div class="image-links">
-            <audio controls style="margin-left: 10px; margin-top: 10px; display: block;">
-                <source src="akg1m_3.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
+    
+<div class="image-links">
+    <audio controls style="margin-left: 10px; margin-top: 10px; display: block;">
+        <source src="akg1m_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
 
-            <audio controls style="margin-left: 10px; margin-top: 10px; display: block;">
-                <source src="vn_3_2.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
+    <audio controls style="margin-left: 10px; margin-top: 10px; display: block;">
+        <source src="vn_3_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
 
-        <div class="image-container">
-            <input type="radio" name="foragingPack-images" id="foragingPack-img1" hidden />
-            <img src="pack1.jpg" alt="pack1" class="project-image">
-            <input type="radio" name="foragingPack-images" id="foragingPack-img2" hidden />
-            <img src="pack4.jpg" alt="pack4" class="project-image">
-            <input type="radio" name="foragingPack-images" id="foragingPack-img3" hidden />
-            <img src="pack3.jpg" alt="pack3" class="project-image">
-        </div>
-    </div>
+<div class="image-container">
+    <input type="radio" name="foragingPack-images" id="foragingPack-img1" hidden />
+    <img src="pack1.jpg" alt="pack1" class="project-image">
+    <input type="radio" name="foragingPack-images" id="foragingPack-img2" hidden />
+    <img src="pack4.jpg" alt="pack4" class="project-image">
+    <input type="radio" name="foragingPack-images" id="foragingPack-img3" hidden />
+    <img src="pack3.jpg" alt="pack3" class="project-image">
 </div>
+</div>
+</div>
+</details>
     
 
 
 
 
 
-
-    <footer class="site-footer">
-        <div class="footer-container">
-    
+<footer class="site-footer">
+    <div class="footer-container">
         <div class="footer-bottom">
             <p>&copy; 2025 Scott Carlson. All rights reserved.</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
 
 
