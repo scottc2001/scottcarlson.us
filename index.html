@@ -175,12 +175,13 @@ audio {
 }
 
 
-/* Ensure the body and html take the full height of the screen */
+
 html, body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Main content should take up available space */
@@ -206,10 +207,15 @@ html, body {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    details summary::-webkit-details-marker {
+        display: none; /* Hide the dropdown arrows */
+    }
+}
 
         
 
-        label {
+ label {
             cursor: pointer;
         }
     </style>
